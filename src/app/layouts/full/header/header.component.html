@@ -1,0 +1,8 @@
+
+<mat-nav-list>
+  <mat-list-item>
+    <a style="color: white;" *ngFor="let menuitem of menuItems.getMenuitem()" (click)="menuItems.menuItemClick(menuitem)">{{ menuitem.name }}</a>
+
+  </mat-list-item>
+
+</mat-nav-list>

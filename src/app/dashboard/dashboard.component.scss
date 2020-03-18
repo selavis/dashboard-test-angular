@@ -1,0 +1,46 @@
+.position-relative {
+	position: relative;
+}
+
+.add-contact {
+	position: absolute;
+    right: 17px;
+    top: 57px;
+}
+:host /deep/ .test{
+  color: red;
+}
+
+.page-section {
+	  float:left;
+		height: 480px;
+		width: 60%;
+		margin-left: 2%;
+    margin-top: 2%;
+    margin-bottom: 5%;
+		padding: 3em;
+    background: linear-gradient(45deg, #43cea2 10%, #185a9d 90%);
+		color: white;
+		box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.5);
+}
+.navigation {
+  	position: fixed;
+		margin-top: 2%;
+		width: 30%;
+		margin-left: 60%;
+  	color: #252525;
+  	&__link {
+			display: block;
+    	color: grey;
+    	text-decoration: none;
+    	padding: 1em;
+			font-weight: 400;
+			border-left-style: solid;
+ 			border-left-color: grey;
+		   &.active {
+		   	color: black;
+				border-left-style: solid;
+				border-left-color: black;
+		   }
+  	}
+}
