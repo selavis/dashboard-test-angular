@@ -28,7 +28,7 @@ export class DashboardComponent  {
 
     $(window).scroll(() => {
       const scrollDistance = $(window).scrollTop();
-    $('.page-section').each(function(i) {
+    $('.page-section ').each(function(i) {
       if ($(this).position().top <= scrollDistance) {
           $('.navigation a.active').removeClass('active');
           $('.navigation a').eq(i).addClass('active');
