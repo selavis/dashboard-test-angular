@@ -1,3 +1,4 @@
+
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
@@ -6,9 +7,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { DashboardComponent } from './dashboard.component';
 import { DashboardRoutes } from './dashboard.routing';
 import { ChartistModule } from 'ng-chartist';
-import { PageTocComponent } from './page-toc/page-toc.component';
-import { FormsModule } from '@angular/forms';
-import { BrowserModule } from '@angular/platform-browser';
+import { MatOptionModule, MatAutocompleteModule, MatInputModule, MatFormFieldModule } from '@angular/material';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 
 @NgModule({
   imports: [
@@ -17,8 +17,12 @@ import { BrowserModule } from '@angular/platform-browser';
     FlexLayoutModule,
     ChartistModule,
     RouterModule.forChild(DashboardRoutes),
-    FormsModule
+    MatAutocompleteModule,
+    MatInputModule,
+    MatFormFieldModule,
+    ReactiveFormsModule,
+    FormsModule,
   ],
-  declarations: [DashboardComponent, PageTocComponent]
+  declarations: [DashboardComponent]
 })
-export class DashboardModule {}
+export class DashboardModule { }

@@ -6,11 +6,11 @@ export interface DemoColor {
   color: string;
 }
 @Component({
-  selector: 'app-chips',
-  templateUrl: './chips.component.html',
-  styleUrls: ['./chips.component.scss']
+  selector: 'app-cataloghi',
+  templateUrl: './cataloghi.component.html',
+  styleUrls: ['./cataloghi.component.scss']
 })
-export class ChipsComponent {
+export class CataloghiComponent {
   visible = true;
   selectable = true;
   removable = true;

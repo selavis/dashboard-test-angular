@@ -7,7 +7,7 @@ import { aprovazioniComponent } from './aprovazioni/aprovazioni.component';
 import { impattoComponent } from './impatto/impatto.component';
 import { informativeComponent } from './informative/informative.component';
 import { violazioniComponent } from './violazioni/violazioni.component';
-import { ChipsComponent } from './chips/chips.component';
+import { CataloghiComponent } from './cataloghi/cataloghi.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
 import { ProgressSnipperComponent } from './progress-snipper/progress-snipper.component';
 import { ProgressComponent } from './progress/progress.component';
@@ -47,8 +47,8 @@ export const MaterialRoutes: Routes = [
     component: violazioniComponent
   },
   {
-    path: 'chips',
-    component: ChipsComponent
+    path: 'cataloghi',
+    component: CataloghiComponent
   },
   {
     path: 'toolbar',

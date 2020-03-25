@@ -41,12 +41,11 @@
   <mat-list-item appAccordionLink *ngFor="let menuitem of menuItems.getMenuitem()" outerLinkActive="selected"
     group="{{menuitem.state}}">
     <a class appAccordionToggle [routerLink]="['/', menuitem.state]" *ngIf="menuitem.type === 'link'">
-      <mat-icon >{{ menuitem.icon }} </mat-icon>
+      <mat-icon>{{ menuitem.icon }} </mat-icon>
 
       <span>{{ menuitem.name }}</span>
       <span fxFlex></span>
-      <span class="label label-{{ badge.type }}" *ngFor="let badge of menuitem.badge"
-      style="background-color: #fb3a3a;
+      <span class="label label-{{ badge.type }}" *ngFor="let badge of menuitem.badge" style="background-color: #fb3a3a;
       padding: 3px 10px;
       line-height: 13px;
       color: #fff;

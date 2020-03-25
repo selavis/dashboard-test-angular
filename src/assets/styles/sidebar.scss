@@ -10,7 +10,7 @@ Main sidebar
 ******************/
 
 mat-sidenav {
-  width: 240px;
+  width: 245px;
   padding-top: 0px;
   background: #353535;
 }
@@ -105,7 +105,7 @@ use profile section
 
   .profile-img {
     width: 50px;
-    margin-left: 30px;
+    margin-left: 10px;
     padding: 31px 0;
     border-radius: 100%;
 
@@ -181,23 +181,23 @@ use profile section
     white-space: nowrap;
 
     >ti-angle-down {
-      padding: 5px 0px;
-    position: relative;
-    cursor: pointer;
-    white-space: nowrap;
+      /* padding: 5px 5px; */
+      position: relative;
+      cursor: pointer;
+      white-space: nowrap;
     }
 
     >a {
       color: $white !important;
       width: 100%;
-      padding: 6px 30px;
+      padding: 6px 10px;
       //background: rgba(0, 0, 0, 0.5);
-      display: block;
+      display: inline-block;
       white-space: nowrap;
 
       &:after {
         position: absolute;
-        right: 20px;
+        right: 10px;
         top: 20px;
       }
     }
