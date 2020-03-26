@@ -1,15 +1,7 @@
-<!-- ============================================================== -->
-<!-- sidebar -->
-<!-- ============================================================== -->
 <div class="user-profile" style="background: url(assets/images/background/user-info.png) no-repeat;">
-  <!-- User profile image -->
   <div class="profile-img">
     <img src="assets/images/users/userprofile.png" alt="user">
   </div>
-  <!-- User profile text -->
-  <!-- ============================================================== -->
-  <!-- Profile - style you can find in header.scss -->
-  <!-- ============================================================== -->
   <div class="profile-text">
     <a [matMenuTriggerFor]="sdprofile" class="mat-caption">
       menicanti@orlandi.mobi
@@ -37,7 +29,56 @@
   </mat-menu>
 
 </div>
-<mat-nav-list appAccordion>
+
+<mat-nav-list>
+  <mat-list-item>
+    <a style="font-size: 11px;" [routerLink]="'/home'">
+      <mat-icon>home</mat-icon> HOME
+    </a>
+  </mat-list-item>
+  <mat-list-item>
+    <a style="font-size: 11px;" [routerLink]="'/dashboard'">
+      <mat-icon>dashboard</mat-icon> DASHBOARD
+    </a>
+  </mat-list-item>
+  <mat-list-item>
+    <a style="font-size: 11px;" [routerLink]="'/organizzazioni'">
+      <mat-icon>domain</mat-icon> ORGANIZZAZIONI
+    </a>
+  </mat-list-item>
+  <mat-list-item>
+    <a style="font-size: 11px;" [routerLink]="'/registri'">
+      <mat-icon>content_paste</mat-icon> REGISTRI
+    </a>
+  </mat-list-item>
+  <mat-list-item>
+    <a style="font-size: 11px;" [routerLink]="'/aprovazioni'">
+      <mat-icon matBadge="1" matBadgeColor="warn">assignment_late</mat-icon> APROVAZIONI
+    </a>
+  </mat-list-item>
+  <mat-list-item>
+    <a style="font-size: 11px;" [routerLink]="'/impatto'">
+      <mat-icon>verified_user</mat-icon> IMPATTO
+    </a>
+  </mat-list-item>
+  <mat-list-item>
+    <a style="font-size: 11px;" [routerLink]="'/informative'">
+      <mat-icon>info</mat-icon> INFORMATIVE
+    </a>
+  </mat-list-item>
+  <mat-list-item>
+    <a style="font-size: 11px;" [routerLink]="'/violazioni'">
+      <mat-icon>flash_on</mat-icon> VIOLAZIONI
+    </a>
+  </mat-list-item>
+  <mat-list-item>
+    <a style="font-size: 11px;" [routerLink]="'/cataloghi'">
+      <mat-icon>local_library</mat-icon> CATALOGHI
+    </a>
+  </mat-list-item>
+</mat-nav-list>
+
+<!-- <mat-nav-list appAccordion>
   <mat-list-item appAccordionLink *ngFor="let menuitem of menuItems.getMenuitem()" outerLinkActive="selected"
     group="{{menuitem.state}}">
     <a class appAccordionToggle [routerLink]="['/', menuitem.state]" *ngIf="menuitem.type === 'link'">
@@ -54,7 +95,56 @@
       font-size: 75%;
   ">{{ badge.value }}</span>
     </a>
+  </mat-list-item>
+</mat-nav-list> -->
+
+<mat-nav-list style="position:absolute; bottom: 10px ; width:100%;">
+  <mat-list-item>
+    <a style="font-size: 12px;">
+      Modalità obiettivo &nbsp;
+      <span style="background-color: rgba(52,201,124,.16); color: #00c961;flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 10px;
+        width: 30px;
+        max-width: 30px;
+        height: 15px;
+        border-radius: 4px;
+        font-weight: 700;
+        letter-spacing: -.2px;
+        text-transform: uppercase;">
+        NEW</span>
+      <span fxFlex></span>
+      <mat-slide-toggle style="color: #00c961">
+      </mat-slide-toggle>
+    </a>
 
   </mat-list-item>
-
+  <mat-divider style="background-color: gray;"></mat-divider>
+  <mat-list-item>
+    <a style="font-size: 11px;" [routerLink]="'/dialog'">
+      <mat-icon>send</mat-icon> FEEDBACK
+    </a>
+  </mat-list-item>
+  <mat-list-item>
+    <a style="font-size: 11px;" [routerLink]="'/progress'">
+      <mat-icon>file_upload</mat-icon> IMPORTAZIONI
+    </a>
+  </mat-list-item>
+  <mat-list-item>
+    <a style="font-size: 11px;" [routerLink]="'/progress-snipper'">
+      <mat-icon>help</mat-icon> DOCUMENTAZIONE
+    </a>
+  </mat-list-item>
+  <mat-list-item>
+    <a style="font-size: 11px;" [routerLink]="'/slide-toggle'">
+      <mat-icon>assignment_ind</mat-icon> ATTIVITA
+    </a>
+  </mat-list-item>
+  <mat-list-item>
+    <a style="font-size: 11px;" [routerLink]="'/slider'">
+      <mat-icon>settings</mat-icon> IMPOSTAZIONI
+    </a>
+  </mat-list-item>
 </mat-nav-list>

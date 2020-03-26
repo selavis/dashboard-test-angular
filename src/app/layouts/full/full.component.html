@@ -1,14 +1,13 @@
-
 <div class="main-container">
 
   <mat-toolbar color="dark" class="topbar telative" style="background-color: #353535;">
-  <div class="navbar-header">
+    <div class="navbar-header">
       <a class="navbar-brand" href="index.html">
-       <b>
-        <img src="assets/images/utopia2.png" alt="homepage" class="dark-logo">
+        <b>
+          <img src="assets/images/utopia2.png" alt="homepage" class="dark-logo">
           <img src="assets/images/utopia2.png" alt="homepage" class="light-logo">
         </b>
-       <span fxShow="false" fxShow.gt-xs>
+        <span fxShow="false" fxShow.gt-xs>
           <img src="assets/images/utopia3.png" alt="homepage" class="dark-logo">
           <img src="assets/images/utopia3.png" class="light-logo" alt="homepage">
         </span> </a>
@@ -16,15 +15,11 @@
     <button mat-icon-button (click)="snav.toggle()" value="sidebarclosed">
       <mat-icon>menu</mat-icon>
     </button>
-      <mat-list-item appAccordionLink *ngFor="let menuitem of menuItems.getMenuitem()"outerLinkActive="selected"
-        group="{{ menuitem.name }}">
-        <h3>{{ menuitem.name }}</h3>
-      </mat-list-item>
-      <app-header></app-header>
-      <span fxFlex></span>
+    <app-header></app-header>
+    <span fxFlex></span>
 
-    </mat-toolbar>
- <mat-sidenav-container class="example-sidenav-container" [style.marginTop.px]="mobileQuery.matches ? 0 : 0">
+  </mat-toolbar>
+  <mat-sidenav-container class="example-sidenav-container" [style.marginTop.px]="mobileQuery.matches ? 0 : 0">
     <mat-sidenav #snav id="snav" class="dark-sidebar pl-xs" [mode]="mobileQuery.matches ? 'side' : 'over'"
       fixedTopGap="0" [opened]="mobileQuery.matches" [disableClose]="mobileQuery.matches">
 
@@ -43,5 +38,5 @@
       </div>
 
     </mat-sidenav-content>
-    </mat-sidenav-container>
+  </mat-sidenav-container>
 </div>

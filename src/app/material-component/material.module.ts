@@ -32,7 +32,6 @@ import { TooltipComponent } from './tooltip/tooltip.component';
 import { SnackbarComponent } from './snackbar/snackbar.component';
 import { SliderComponent } from './slider/slider.component';
 import { SlideToggleComponent } from './slide-toggle/slide-toggle.component';
-import { MatbadgeComponent } from './matbadge/matbadge.component';
 
 
 @NgModule({
@@ -67,7 +66,6 @@ import { MatbadgeComponent } from './matbadge/matbadge.component';
     SnackbarComponent,
     SliderComponent,
     SlideToggleComponent,
-    MatbadgeComponent
   ]
 })
 export class MaterialComponentsModule { }
