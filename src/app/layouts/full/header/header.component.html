@@ -1,8 +1,5 @@
-<mat-nav-list>
-  <mat-list-item>
-    <a style="color: white;" *ngFor="let menuitem of menuItems.getMenuitem()"
-      (click)="menuItems.menuItemClick(menuitem)">{{ menuitem.name }}</a>
-
-  </mat-list-item>
-
-</mat-nav-list>
+<xng-breadcrumb>
+  <ng-container *xngBreadcrumbItem="let breadcrumb">
+    <ng-container>{{ breadcrumb | titlecase }}</ng-container>
+  </ng-container>
+</xng-breadcrumb>

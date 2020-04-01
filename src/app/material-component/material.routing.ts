@@ -20,7 +20,7 @@ import { SlideToggleComponent } from './slide-toggle/slide-toggle.component';
 export const MaterialRoutes: Routes = [
   {
     path: 'home',
-    component: homeComponent
+    component: homeComponent,
   },
   {
     path: 'organizzazioni',

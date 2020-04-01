@@ -36,6 +36,4 @@ export class AppHeaderComponent implements OnDestroy, AfterViewInit {
     this.mobileQuery.removeListener(this._mobileQueryListener);
   }
   ngAfterViewInit() { }
-  handleMenuClick() {
-  }
 }

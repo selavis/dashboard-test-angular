@@ -14,6 +14,16 @@ mat-toolbar {
 
   &.topbar {
     padding: 0px 15px;
+
+    .xng-breadcrumb-root {
+      margin-top: 10px;
+      margin-left: 15px;
+    }
+
+    .xng-breadcrumb-trail {
+      top: 10px;
+      color: white;
+    }
   }
 
 

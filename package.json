@@ -25,6 +25,7 @@
     "@angular/platform-browser": "9.0.6",
     "@angular/platform-browser-dynamic": "9.0.6",
     "@angular/router": "9.0.6",
+    "@ranout/ngx-breadcrumb": "^1.0.5",
     "@swimlane/ngx-charts": "^13.0.2",
     "@swimlane/ngx-datatable": "^16.0.3",
     "bootstrap": "^4.4.1",
@@ -37,9 +38,11 @@
     "ng-starrating": "^1.0.20",
     "node-sass": "^4.13.1",
     "popper.js": "^1.16.1",
+    "pp-breadcrumbs": "^1.0.5",
     "rxjs": "^6.5.4",
     "rxjs-compat": "^6.5.4",
     "tslib": "^1.11.1",
+    "xng-breadcrumb": "^5.0.1",
     "zone.js": "^0.10.3"
   },
   "devDependencies": {
