@@ -164,6 +164,27 @@ label:hover~input:checked~label
   width: 220px;
 }
 
+@media only screen and (max-width: 550px) {
+  .kartabardh {
+    padding: 20px;
+    height: 83px;
+    width: 330px;
+  }
+
+  .kartablu {
+    padding: 20px;
+    background-color: #5A69F4;
+    height: 83px;
+    width: 330px;
+  }
+
+  .kartabardhgjate {
+    padding: 20px;
+    height: 83px;
+    width: 330px;
+  }
+}
+
 .emriblu {
   display: inline-block;
   position: relative;
