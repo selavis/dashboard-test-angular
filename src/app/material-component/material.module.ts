@@ -22,16 +22,15 @@ import { informativeComponent } from './informative/informative.component';
 import { violazioniComponent } from './violazioni/violazioni.component';
 import { CataloghiComponent } from './cataloghi/cataloghi.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
-import { ProgressSnipperComponent } from './progress-snipper/progress-snipper.component';
-import { ProgressComponent } from './progress/progress.component';
+import { documentazioneComponent } from './documentazione/documentazione.component';
+import { importazioniComponent } from './importazioni/importazioni.component';
 import {
-  DialogComponent,
-  DialogOverviewExampleDialogComponent
-} from './dialog/dialog.component';
+  feedbackComponent
+} from './feedback/feedback.component';
 import { TooltipComponent } from './tooltip/tooltip.component';
 import { SnackbarComponent } from './snackbar/snackbar.component';
-import { SliderComponent } from './slider/slider.component';
-import { SlideToggleComponent } from './slide-toggle/slide-toggle.component';
+import { impostazioniComponent } from './impostazioni/impostazioni.component';
+import { attivitaComponent } from './attivita/attivita.component';
 
 
 @NgModule({
@@ -47,7 +46,6 @@ import { SlideToggleComponent } from './slide-toggle/slide-toggle.component';
     CdkTableModule
   ],
   providers: [],
-  entryComponents: [DialogOverviewExampleDialogComponent],
   declarations: [
     homeComponent,
     organizzazioniComponent,
@@ -58,14 +56,13 @@ import { SlideToggleComponent } from './slide-toggle/slide-toggle.component';
     violazioniComponent,
     CataloghiComponent,
     ToolbarComponent,
-    ProgressSnipperComponent,
-    ProgressComponent,
-    DialogComponent,
-    DialogOverviewExampleDialogComponent,
+    documentazioneComponent,
+    importazioniComponent,
+    feedbackComponent,
     TooltipComponent,
     SnackbarComponent,
-    SliderComponent,
-    SlideToggleComponent,
+    impostazioniComponent,
+    attivitaComponent,
   ]
 })
 export class MaterialComponentsModule { }

@@ -9,13 +9,13 @@ import { informativeComponent } from './informative/informative.component';
 import { violazioniComponent } from './violazioni/violazioni.component';
 import { CataloghiComponent } from './cataloghi/cataloghi.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
-import { ProgressSnipperComponent } from './progress-snipper/progress-snipper.component';
-import { ProgressComponent } from './progress/progress.component';
-import { DialogComponent } from './dialog/dialog.component';
+import { documentazioneComponent } from './documentazione/documentazione.component';
+import { importazioniComponent } from './importazioni/importazioni.component';
+import { feedbackComponent } from './feedback/feedback.component';
 import { TooltipComponent } from './tooltip/tooltip.component';
 import { SnackbarComponent } from './snackbar/snackbar.component';
-import { SliderComponent } from './slider/slider.component';
-import { SlideToggleComponent } from './slide-toggle/slide-toggle.component';
+import { impostazioniComponent } from './impostazioni/impostazioni.component';
+import { attivitaComponent } from './attivita/attivita.component';
 
 export const MaterialRoutes: Routes = [
   {
@@ -55,16 +55,16 @@ export const MaterialRoutes: Routes = [
     component: ToolbarComponent
   },
   {
-    path: 'progress-snipper',
-    component: ProgressSnipperComponent
+    path: 'documentazione',
+    component: documentazioneComponent
   },
   {
-    path: 'progress',
-    component: ProgressComponent
+    path: 'importazioni',
+    component: importazioniComponent
   },
   {
-    path: 'dialog',
-    component: DialogComponent
+    path: 'feedback',
+    component: feedbackComponent
   },
   {
     path: 'tooltip',
@@ -75,11 +75,11 @@ export const MaterialRoutes: Routes = [
     component: SnackbarComponent
   },
   {
-    path: 'slider',
-    component: SliderComponent
+    path: 'impostazioni',
+    component: impostazioniComponent
   },
   {
-    path: 'slide-toggle',
-    component: SlideToggleComponent
+    path: 'attivita',
+    component: attivitaComponent
   }
 ];
