@@ -32,119 +32,102 @@
 
 <mat-nav-list>
   <mat-list-item>
-    <a style="font-size: 11px;" routerLink="/home">
-      <mat-icon>home</mat-icon> HOME
+    <a style="font-size: 13px;" routerLink="/home">
+      <mat-icon>home</mat-icon>
+      <div class="lts">HOME</div>
     </a>
   </mat-list-item>
   <mat-list-item>
-    <a style="font-size: 11px;" routerLink="/dashboard">
-      <mat-icon>dashboard</mat-icon> DASHBOARD
+    <a style="font-size: 13px;" routerLink="/dashboard">
+      <mat-icon>dashboard</mat-icon>
+      <div class="lts">DASHBOARD</div>
     </a>
   </mat-list-item>
   <mat-list-item>
-    <a style="font-size: 11px;" [routerLink]="'/organizzazioni'">
-      <mat-icon>domain</mat-icon> ORGANIZZAZIONI
+    <a style="font-size: 13px;" routerLink="'/organizzazioni'">
+      <mat-icon>domain</mat-icon>
+      <div class="lts">ORGANIZZAZIONI</div>
     </a>
   </mat-list-item>
   <mat-list-item>
-    <a style="font-size: 11px;" [routerLink]="'/registri'">
-      <mat-icon>content_paste</mat-icon> REGISTRI
+    <a style="font-size: 13px;" [routerLink]="'/registri'">
+      <mat-icon>content_paste</mat-icon>
+      <div class="lts">REGISTRI</div>
     </a>
   </mat-list-item>
   <mat-list-item>
-    <a style="font-size: 11px;" [routerLink]="'/aprovazioni'">
-      <mat-icon matBadge="1" matBadgeColor="warn">assignment_late</mat-icon> APROVAZIONI
+    <a style="font-size: 13px;" [routerLink]="'/aprovazioni'">
+      <mat-icon matBadge="1" matBadgeColor>assignment_late</mat-icon>
+      <div class="lts">APROVAZIONI</div>
     </a>
   </mat-list-item>
   <mat-list-item>
-    <a style="font-size: 11px;" [routerLink]="'/impatto'">
-      <mat-icon>verified_user</mat-icon> IMPATTO
+    <a style="font-size: 13px;" [routerLink]="'/impatto'">
+      <mat-icon>verified_user</mat-icon>
+      <div class="lts">IMPATTO</div>
     </a>
   </mat-list-item>
   <mat-list-item>
-    <a style="font-size: 11px;" [routerLink]="'/informative'">
-      <mat-icon>info</mat-icon> INFORMATIVE
+    <a style="font-size: 13px;" [routerLink]="'/informative'">
+      <mat-icon>info</mat-icon>
+      <div class="lts">INFORMATIVE</div>
     </a>
   </mat-list-item>
   <mat-list-item>
-    <a style="font-size: 11px;" [routerLink]="'/violazioni'">
-      <mat-icon>flash_on</mat-icon> VIOLAZIONI
+    <a style="font-size: 13px;" [routerLink]="'/violazioni'">
+      <mat-icon>flash_on</mat-icon>
+      <div class="lts">VIOLAZIONI</div>
     </a>
   </mat-list-item>
   <mat-list-item>
-    <a style="font-size: 11px;" [routerLink]="'/cataloghi'">
-      <mat-icon>local_library</mat-icon> CATALOGHI
+    <a style="font-size: 13px;" [routerLink]="'/cataloghi'">
+      <mat-icon>local_library</mat-icon>
+      <div class="lts">CATALOGHI</div>
     </a>
   </mat-list-item>
 </mat-nav-list>
 
-<!-- <mat-nav-list appAccordion>
-  <mat-list-item appAccordionLink *ngFor="let menuitem of menuItems.getMenuitem()" outerLinkActive="selected"
-    group="{{menuitem.state}}">
-    <a class appAccordionToggle [routerLink]="['/', menuitem.state]" *ngIf="menuitem.type === 'link'">
-      <mat-icon>{{ menuitem.icon }} </mat-icon>
-
-      <span>{{ menuitem.name }}</span>
-      <span fxFlex></span>
-      <span class="label label-{{ badge.type }}" *ngFor="let badge of menuitem.badge" style="background-color: #fb3a3a;
-      padding: 3px 10px;
-      line-height: 13px;
-      color: #fff;
-      font-weight: 400;
-      border-radius: 50%;
-      font-size: 75%;
-  ">{{ badge.value }}</span>
-    </a>
-  </mat-list-item>
-</mat-nav-list> -->
-
-<mat-nav-list style="position:absolute; bottom: 10px ; width:100%;">
+<mat-nav-list style="position:relative; top: 15px ; ">
   <mat-list-item>
-    <a style="font-size: 12px;">
+    <a style="font-size: 13px;">
       Modalità obiettivo &nbsp;
-      <span style="background-color: rgba(52,201,124,.16); color: #00c961;flex: 1;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 10px;
-        width: 30px;
-        max-width: 30px;
-        height: 15px;
-        border-radius: 4px;
-        font-weight: 700;
-        letter-spacing: -.2px;
-        text-transform: uppercase;">
+      <span class="new">
         NEW</span>
       <span fxFlex></span>
-      <mat-slide-toggle style="color: #00c961">
+      <mat-slide-toggle [checked]="checked">
       </mat-slide-toggle>
     </a>
 
   </mat-list-item>
   <mat-divider style="background-color: gray;"></mat-divider>
   <mat-list-item>
-    <a style="font-size: 11px;" [routerLink]="'/feedback'">
-      <mat-icon>send</mat-icon> FEEDBACK
+    <a style="font-size: 13px;" [routerLink]="'/feedback'">
+      <mat-icon>send</mat-icon>
+      <div class="lts">FEEDBACK</div>
     </a>
   </mat-list-item>
   <mat-list-item>
-    <a style="font-size: 11px;" [routerLink]="'/importazioni'">
-      <mat-icon>file_upload</mat-icon> IMPORTAZIONI
+    <a style="font-size: 13px;" [routerLink]="'/importazioni'">
+      <mat-icon>file_upload</mat-icon>
+      <div class="lts">IMPORTAZIONI</div>
     </a>
   </mat-list-item>
   <mat-list-item>
-    <a style="font-size: 11px;" [routerLink]="'/documentazione'">
-      <mat-icon>help</mat-icon> DOCUMENTAZIONE
+    <a style="font-size: 13px;" [routerLink]="'/documentazione'">
+      <mat-icon>help</mat-icon>
+      <div class="lts">DOCUMENTAZIONE</div>
     </a>
   </mat-list-item>
   <mat-list-item>
-    <a style="font-size: 11px;" [routerLink]="'/attivita'">
-      <mat-icon>assignment_ind</mat-icon> ATTIVITA
+    <a style="font-size: 13px;" [routerLink]="'/attivita'">
+      <mat-icon>assignment_ind</mat-icon>
+      <div class="lts">ATTIVITA</div>
     </a>
   </mat-list-item>
   <mat-list-item>
-    <a style="font-size: 11px;" [routerLink]="'/impostazioni'">
-      <mat-icon>settings</mat-icon> IMPOSTAZIONI
+    <a style="font-size: 13px;" [routerLink]="'/impostazioni'">
+      <mat-icon>settings</mat-icon>
+      <div class="lts">IMPOSTAZIONI</div>
     </a>
   </mat-list-item>
 </mat-nav-list>

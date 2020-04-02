@@ -1,10 +1,3 @@
-/*
-Template Name: Material Pro Admin
-Author: Themedesigner
-Email: niravjoshi87@gmail.com
-File: scss
-*/
-
 /*******************
 Main sidebar
 ******************/
@@ -14,6 +7,40 @@ mat-sidenav {
   padding-top: 0px;
   background: #353535;
 }
+
+.mat-slide-toggle.mat-checked:not(.mat-disabled) .mat-slide-toggle-bar {
+  background-color: rgba(52, 201, 124, .16) !important
+}
+
+.mat-slide-toggle.mat-checked:not(.mat-disabled) .mat-slide-toggle-thumb {
+  background-color: #00c961;
+}
+
+.mat-badge-content {
+  background: red;
+}
+
+.lts {
+  padding-left: 10px;
+}
+
+.new {
+  background-color: rgba(52, 201, 124, .16);
+  color: #00c961;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+  width: 30px;
+  max-width: 30px;
+  height: 15px;
+  border-radius: 4px;
+  font-weight: 700;
+  letter-spacing: -.2px;
+  text-transform: uppercase;
+}
+
 
 #snav {
   box-shadow: 1px 0px 20px rgba(0, 0, 0, 0.08);
@@ -87,7 +114,6 @@ mat-sidenav {
     }
 
     &.selected .sub-item .mat-list-item-content a.selected {
-      //background: transparent;
       background: #494949;
       color: $inverse;
       font-weight: 500;
@@ -181,7 +207,6 @@ use profile section
     white-space: nowrap;
 
     >ti-angle-down {
-      /* padding: 5px 5px; */
       position: relative;
       cursor: pointer;
       white-space: nowrap;
@@ -191,7 +216,6 @@ use profile section
       color: $white !important;
       width: 100%;
       padding: 6px 10px;
-      //background: rgba(0, 0, 0, 0.5);
       display: inline-block;
       white-space: nowrap;
 
@@ -204,6 +228,7 @@ use profile section
   }
 
 }
+
 
 
 .sidebar-closed #snav {

@@ -20,7 +20,7 @@ import { ThemePalette } from '@angular/material/core';
 })
 export class AppSidebarComponent implements OnDestroy {
   mobileQuery: MediaQueryList;
-
+  checked = true;
 
 
   private _mobileQueryListener: () => void;

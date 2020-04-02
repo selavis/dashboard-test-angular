@@ -21,14 +21,11 @@ import { impattoComponent } from './impatto/impatto.component';
 import { informativeComponent } from './informative/informative.component';
 import { violazioniComponent } from './violazioni/violazioni.component';
 import { CataloghiComponent } from './cataloghi/cataloghi.component';
-import { ToolbarComponent } from './toolbar/toolbar.component';
 import { documentazioneComponent } from './documentazione/documentazione.component';
 import { importazioniComponent } from './importazioni/importazioni.component';
 import {
   feedbackComponent
 } from './feedback/feedback.component';
-import { TooltipComponent } from './tooltip/tooltip.component';
-import { SnackbarComponent } from './snackbar/snackbar.component';
 import { impostazioniComponent } from './impostazioni/impostazioni.component';
 import { attivitaComponent } from './attivita/attivita.component';
 
@@ -55,12 +52,9 @@ import { attivitaComponent } from './attivita/attivita.component';
     informativeComponent,
     violazioniComponent,
     CataloghiComponent,
-    ToolbarComponent,
     documentazioneComponent,
     importazioniComponent,
     feedbackComponent,
-    TooltipComponent,
-    SnackbarComponent,
     impostazioniComponent,
     attivitaComponent,
   ]

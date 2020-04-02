@@ -1,10 +1,6 @@
 @import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
 
-.example-form {
-  min-width: 150px;
-  max-width: 500px;
-  width: 100%;
-}
+
 
 .example-full-width {
   width: 100%;
@@ -64,7 +60,6 @@ small {
 }
 
 
-/* Ratings widget */
 .rate {
   display: inline-block;
   flex-direction: row-reverse;
@@ -74,17 +69,14 @@ small {
   color: lightgrey;
 }
 
-/* Hide radio */
 .rate>input {
   display: none;
 }
 
-/* Order correctly by floating highest to the right */
 .rate>label {
   float: right;
 }
 
-/* The star of the show */
 .rate>label:before {
   display: inline-block;
   flex-direction: row-reverse;
@@ -99,45 +91,30 @@ small {
   font-family: FontAwesome;
   content: "\f005 ";
   outline-style: rgb(245, 198, 12);
-  /* full star */
 }
 
-/* Zero stars rating */
 .rate>label:last-child:before {
   content: "\f006 ";
   color: rgb(245, 198, 12);
-  /* empty star outline */
 }
 
-/* Half star trick */
 .rate .half:before {
   content: "\f089 ";
-  /* half star no outline */
   position: absolute;
   padding-right: 0;
 }
 
-/* Click + hover color */
 input:checked~label,
-/* color current and previous stars on checked */
 label:hover,
 label:hover~label {
   color: rgb(245, 198, 12);
 
 }
 
-/* color previous stars on hover */
-
-/* Hover highlights */
 input:checked+label:hover,
 input:checked~label:hover,
-/* highlight current and previous stars */
 input:checked~label:hover~label,
-/* highlight previous selected stars for new rating */
-label:hover~input:checked~label
-
-/* highlight previous selected stars */
-  {
+label:hover~input:checked~label {
   color: rgb(245, 198, 12);
 }
 
