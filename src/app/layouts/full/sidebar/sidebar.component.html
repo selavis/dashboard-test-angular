@@ -1,6 +1,8 @@
 <div class="user-profile" style="background: url(assets/images/background/user-info.png) no-repeat;">
   <div class="profile-img">
-    <img src="assets/images/users/userprofile.png" alt="user">
+    <img
+      src="https://raw.githubusercontent.com/selavis/dashboard-test-angular/master/src/assets/images/users/userprofile.png"
+      alt="user">
   </div>
   <div class="profile-text">
     <a [matMenuTriggerFor]="sdprofile" class="mat-caption">
@@ -44,7 +46,7 @@
     </a>
   </mat-list-item>
   <mat-list-item>
-    <a style="font-size: 13px;" routerLink="'/organizzazioni'">
+    <a style="font-size: 13px;" [routerLink]="'/organizzazioni'">
       <mat-icon>domain</mat-icon>
       <div class="lts">ORGANIZZAZIONI</div>
     </a>
