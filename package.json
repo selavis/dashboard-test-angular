@@ -36,7 +36,7 @@
     "jquery": "^3.4.1",
     "ng-chartist": "4.1.0",
     "ng-starrating": "^1.0.20",
-    "node-sass": "^4.13.1",
+    "node-sass": "^7.0.0",
     "popper.js": "^1.16.1",
     "pp-breadcrumbs": "^1.0.5",
     "rxjs": "^6.5.4",
